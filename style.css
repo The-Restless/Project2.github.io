@@ -1,0 +1,839 @@
+.body{
+    background-image: url("https://media2.giphy.com/media/MXQnyEQwBJ6eTj90L5/giphy.gif?cid=ecf05e47oa85ksxur2o3ntw2glreco08ysrnrk6zg2pufh1l&rid=giphy.gif&ct=g");
+  
+
+    min-height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.top_box{
+    width: 100%;
+    height: 20vw;
+    
+}
+
+  .box{
+    width: 300px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 20px;
+    border: solid 2px red;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+
+  }
+
+.main{
+    background-image: url("https://media2.giphy.com/media/l0MYCSYLARJv1l9eM/giphy.gif?cid=ecf05e47xsppmamtzkqv5yhqaqw25oxxpczhuoxafr61dyrh&rid=giphy.gif&ct=g");
+    
+}
+
+.main_title{
+  display: flex;
+  overflow-wrap: break-word;
+  color: #85C6FF;
+  text-transform: uppercase;
+  font-size: 6vw;
+  line-height: .75;
+  margin: 10px 0;
+  text-align: center;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 1px 0 10px lightblue, 0 0 10px #FFFFFF;
+  }
+  to {
+    text-shadow: 0 0 15px #FFFFFF, 0 1 11px lightblue;
+  }
+}
+
+
+.quote {
+  font-size: 2vw;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #FFFFFF 0%,
+    red 20%,
+    #A1C5FF 67%,
+    #CDA1FF 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200%;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+     
+}
+
+.main2{
+    color: lightblue;
+}
+
+.quote2{
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgba(102, 47, 255, 0.1);
+    border-radius: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.imagelogo {
+    width: 50%;
+    height: 50%;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.imagelogo2 {
+    width: 20vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+
+
+.line {
+        width: 24%;
+        height: 2px;
+        position: absolute;
+        background: #fff;
+      
+        transform: translate(-50%, -50%);
+        -webkit-animation: linear infinite;
+        -webkit-animation-name: run;
+        -webkit-animation-duration: 5s;
+    }
+  
+
+    @-webkit-keyframes run {
+      0% {
+        right: -5%;
+      }
+      50% { 
+        right: 20%;
+       }
+      100% {
+        right: -5%;     
+      }
+    }
+
+
+
+
+.slide_show {
+    width:90%;
+    margin:0 auto;
+    overflow:hidden;
+    background: rgba(77, 166,255,1);
+    align-content: center;
+   
+}
+
+.base_slide{
+    width:50vw;
+    margin:0 auto;
+    overflow:hidden;
+    display: flex;
+    border: 5px solid ;
+}
+.top_customers{
+    margin-top: 8vw;
+    width:100%; /* 300 x 4 */
+    position:relative;
+    -webkit-animation:slide 8s ease-in-out infinite;
+    -moz-animation:slide 8s ease-in-out infinite;
+    -o-animation:slide 8s ease-in-out infinite;
+    animation:slide 8s ease-in-out infinite;
+    display: inline-flex;
+
+}
+
+.top_customers section {
+
+    width:200%;
+    height:30vw;
+    float:left;
+}
+
+.darth{
+    background-image: url(images/darthvader.png);
+    background-size: cover;
+}
+
+.elon{
+    background-image: url(images/musk.png);
+    background-size: cover;
+}
+
+.jeff{
+    background-image: url(images/jeff.png);
+    background-size: cover;
+}
+
+
+.textbox1 {
+    object-fit: fill;
+    width: 70%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+/* slide */
+.stage{
+    height: 60px;
+    width: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 0%;
+    border: 5px solid;
+    border-radius: 15px;
+}
+
+.slidegroup{
+    width: 300%;
+    height:100%;
+    font-size: 1.5vw;
+    animation: slide 15s 5s infinite;
+}
+
+
+
+.s1{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    background-color: rgba(128, 0, 0, 1);
+    color: white
+}
+
+.s2{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    background-color: rgba(128, 0, 0, 1);
+    color: white
+}
+
+.s3{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    background-color: rgba(128, 0, 0, 1);
+    color: white
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+
+    33.333%{margin-left: -100%;}
+
+    66.666%{margin-left: -200%;}
+    
+    100%{margin-left: 0%;}
+}
+
+/*SlideEnd*/
+
+
+.mainimage {
+    background-image: url("images/darthvader.png"); 
+    height: 40vw;
+    width: auto;
+    border: 5px solid;
+    border-radius: 15px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+
+  }
+
+ 
+
+.text {
+    font-size: 20px;
+    color: white;
+}
+
+
+/*Double images*/
+.doubleimage{
+    display:flex;
+    justify-content: center;
+
+}
+
+.double1 {
+    border-radius: 15px;
+    background: linear-gradient(red, darkred, black);
+    border: 2px solid #660708;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5vw;
+    margin-right: 15vw;
+    overflow: auto;
+}
+
+.double2 {
+    border-radius: 15px;
+    border: 2px solid #660708;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5vw;
+    margin-left: 15vw;
+    overflow: auto;
+}
+
+
+
+.gradient1 {
+     border-radius: 15px;
+    background: linear-gradient(red, darkred, black);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+   
+    overflow: auto;
+}
+
+.gradient2 {
+     border-radius: 15px;
+    background: linear-gradient(red, darkred, black);
+    background-image: url("images/musk.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+   
+    overflow: auto;
+} 
+
+.disc p{
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    font-size: calc(7px + 1.5vw);
+    overflow: auto;
+} 
+
+/*first title line*/
+.titleline p{
+    font-size: calc(15px + 1.5vw);
+    color: white;
+    right: 0; 
+    width: 100%;
+    margin-top: -1vw;
+    border-bottom: 1px solid white;
+}
+
+
+/*purchase boxes*/
+.boxes{
+    margin-top: -5vw;
+    padding-bottom: 3vw;
+    display:flex;
+    width: 100%;
+
+}
+
+.boxcontainer{
+    display: block;
+    background-image: url("https://i.pinimg.com/originals/3d/08/e0/3d08e03cb40252526fee2036a67f07f1.gif");
+    background-size: cover; 
+    border-radius:15px;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;;
+   
+
+}
+
+.box1 {
+    background-color: rgba(0, 17, 86, 0.8);
+    border: 2px solid #660708;
+    width: 40vw;
+    height: 100%;
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: filter 1s;
+    border-radius: 20px;
+}
+
+.box2 {
+    background-color: rgba(0, 17, 86, 0.8);
+    border: 2px solid #660708;
+    width: 40vw;
+    height: 100%;
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: filter 1s;
+    border-radius: 20px;
+}
+
+.box3 {
+    background-color: rgba(0, 17, 86, 0.8);
+    border: 2px solid #660708;
+    width: 40vw;
+    height: 100%;
+    margin-top: 50px;
+    margin-right: 5%;
+    margin-left: 5%;
+    transition: filter 1s;
+    border-radius: 20px;
+}
+
+.box1:hover {
+    filter: drop-shadow(0 0 0.75rem red);
+}
+
+.box2:hover {
+    filter: drop-shadow(0 0 0.75rem red);
+}
+
+.box3:hover {
+    filter: drop-shadow(0 0 0.75rem red);
+}
+
+
+
+.img1 {
+    background-image: url("images/redsaber.png");
+    background-size: cover;
+    background-position: top;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+} 
+ 
+.img2 { 
+    background-image: url("images/darksaber.png");
+    background-size: cover;
+    background-position: top;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+}
+
+.img3 { 
+    background-image: url("images/bluesaber.png");
+    background-size: cover;
+    background-position: top;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+}
+
+.img4 { 
+    background-image: url("images/stardestroyer.png");
+    background-size: cover;
+    background-position: top;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+}
+
+.img5 { 
+    background-image: url("images/babyyoda.png");
+    background-size: cover;
+    background-position: top;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+}
+
+.img6 { 
+    background-image: url("images/swbot.png");
+    background-size: cover;
+    background-position: right 20% bottom 45%;;
+    width: 80%;
+    height: 24vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    margin-top: 25px; 
+    padding: 10px; 
+    position: relative; 
+}
+
+.buy {
+ 
+    margin: 0 auto;
+    margin-top: 1px;
+    position: relative;
+    align-items: center; 
+    display: flex;
+
+
+}
+
+.buy a:hover{
+    background-color: rgba(0, 58, 113, 0.8);
+}
+
+.buy a{
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 3%;
+    position: relative;
+    
+    width: 30%;
+
+    background-color: rgba(79, 255, 103, 1);
+
+    border: 2px orange solid;
+    border-radius: 25px;
+
+    text-decoration: none;
+    text-align: center;
+    
+    font-size: 1.5vw;
+
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+.disc{
+    text-align: center;
+  
+    color: white; 
+    font-size: 2vw;
+}
+
+.disc2{
+    text-align: center;
+  
+    color: white; 
+    font-size: 2vw;
+} 
+
+.price{
+    color: lime;
+    font-size: 1.5vw;
+    margin-top: -7%;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_container{
+    border: 5px solid white;
+}
+
+.modal__window {
+  position: relative;
+  background-color: rgba(0, 58, 113, 1);
+  text-align: center;
+  width:60%;
+  border-radius: 25px;
+  
+}
+ 
+.modal__close {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+
+#modal:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#modal2:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#modal3:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#modal4:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#modal5:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+#modal6:not(:target) {
+    visibility: hidden; 
+    opacity: 0;
+}
+
+.cartimg1 {
+    background-image: url("images/redsaber.png");
+    background-size: cover;
+    background-position: top;
+    width: 60vw;
+    height: 30vw;
+    border-radius: 20px; 
+    margin: 0 auto; 
+   
+  
+    position: relative;
+}
+
+.cartimg2 {
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    position: relative;
+
+    width: 50%;
+    height:400px;
+    background-image: url("images/darksaber.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.cartimg3 {
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    position: relative;
+
+    width: 50%;
+    height:400px;
+    background-image: url("images/bluesaber.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.xbutton{
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.modal__window h2 {
+
+    color: black;
+    background-color: lightblue;
+    font-size: 3vw;
+} 
+
+.modal__window p {
+    
+}
+
+.nameside{
+    padding-right:1px;
+
+}
+
+.infoside{
+    width:15vw;
+}
+
+.cardtable{
+    display: flex;
+    align-content: center;
+}
+
+.shopbutton{
+    margin: 0 auto;
+    margin-top: 1px;
+    margin-bottom: 3%;
+    position: relative;
+   
+    width: 30%;
+
+    background-color: grey;
+
+    border: 2px orange solid;
+    border-radius: 25px;
+
+    text-decoration: none;
+    text-align: center;
+    
+    font-size: 1.5vw;
+
+    color: white;
+    padding: 10px; 
+}
+
+.modal_close2{
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.shopbutton:hover {
+    background-color: rgba(0, 58, 113, 0.8);
+
+}
+
+.endpage{
+    display: block;
+    color: white;
+    background: grey;
+    border-radius: 10px;
+}
+
+.endtable{
+    display: block;
+ 
+    color: white;
+    margin-top: 1vw;
+
+    margin-left: auto;
+     margin-right: auto;
+
+
+}
+
+.top_row{
+    font-size: 1.2vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
+  
+}
+
+.second_row{
+    font-size: 0.7vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+
+}
+
+.rightcontact img{
+    float: right;
+    width: 4vw;
+    height: 4vw;
+}
+
